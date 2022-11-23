@@ -5,8 +5,12 @@
 # Si el número no es un entero, o no se le pasa ningún parámetro, debe lanzar una excepción
 
 def is_prime(number):
-    # your code here
-    return False
+    if not type(number) == int: raise Exception('Debes pasar un entero')
+    if number == 1: return False
+    if number == 2: return True
+    for i in range(2,number):
+        if number % i == 0: return False
+    return True
 
 
 

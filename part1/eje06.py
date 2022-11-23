@@ -3,6 +3,10 @@
 
 ###### pon aquí tu código
 
+def character_counter(text):
+    if type(text) != str: return 0
+    return len(text)
+
 def test():
     assert character_counter('Hola') == 4, "Should be 4"
     assert character_counter('') == 0, "Should be 0"

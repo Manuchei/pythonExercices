@@ -5,7 +5,8 @@
 
 def contains_element(data, element):
     # your code here
-    return None
+    if type(data) != set and type(data) != list and type(data) != tuple: return None
+    return element in data
 
 def test():
     assert contains_element({2,5},5) == True, "{2,5} Should be True"

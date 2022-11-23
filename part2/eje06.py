@@ -4,8 +4,10 @@
 # Crea para ello una función llamada get_dni_letter
 # Si el dni no tiene 9 caracteres, devolver None
 # Si el dni no tiene una letra en la última posición ( isalpha() ), devolver None
-
-###### pon aquí tu código
+def get_dni_letter(dni):
+    if len(dni) != 9: return None
+    if not dni[-1].isalpha(): return None
+    return dni[-1].upper()
 
 
 def test():

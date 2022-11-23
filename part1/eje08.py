@@ -10,9 +10,9 @@
 
 
 def access():
+    age = int(input('introduce tu edad'))
+    if age < 18: return "Acceso denegado"
     return "Acceso permitido"
-
-from unittest.mock import MagicMock
 
 import mock
 def test():

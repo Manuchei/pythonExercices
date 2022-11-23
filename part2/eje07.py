@@ -7,7 +7,12 @@
 # Los cif comienzan por la latra de la A a la J
 
     
-###### pon aquí tu código
+def get_type_doc(doc):
+    doc=doc.upper()
+    if len(doc) != 9: return None
+    if doc[0:-2].isdigit() and doc[-1].isalpha(): return 'NIF'
+    if doc[0]>='A' and doc[0] <='J' and doc[1:].isdigit(): return 'CIF'
+    return None
 
 
 def test():

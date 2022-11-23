@@ -13,7 +13,11 @@ animals = [
 ]
 def count_ducks(list):
     # your code here
-    return None
+    cont=0
+    for animal in list:
+        if animal['type']=='duck' and animal['color']=='black' and animal['id'].startswith('G'):
+            cont+=1
+    return cont
 
 
 def test():

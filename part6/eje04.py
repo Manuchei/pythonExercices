@@ -11,11 +11,17 @@ def max(a, b):
     else:
         return b
     
+try:
+    v1 = max(1, 2)
+except TypeError as e:
+    v1=0
+    print('Fallo:',e)
 
-v1 = max(1, 2)
-
-v2 = max('casa', 1)
-
+try: 
+    v2 = max('casa', 1)
+except TypeError as e:
+    v2=0
+    print('Fallo:',e)
 
 
 def test():

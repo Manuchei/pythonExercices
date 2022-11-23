@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 # Guarda en una variable llamada my_set (de tipo set) los valores, 5, 6, "verde", "rojo", 7, 6
 # ¿Cuantos elementos tienes guardados?
+"""Tiene 5 elementos guardados, ya que el elemento 6 esta repetido y los sets
+no admiten elementos repetidos """
 
-mySet = ????
+mySet = {5, 6, "verde", "rojo", 7, 6}
 
 def test():
     assert type(mySet) == set, "Should be a set"

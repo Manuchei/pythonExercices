@@ -6,7 +6,11 @@
 
 
 def my_filter(numbers):
-    pass
+    l1 = lambda x: x%2==0 and x>5
+    l2= lambda x: x*2
+    new_list=filter(l1, numbers)
+    new_list= map(l2, new_list)
+    return list(new_list)
 
 def test():
     assert my_filter([-5,-3,0,2,3,5,7,8,9])== [16], "filtered should be 8x2 = 16"

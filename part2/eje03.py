@@ -6,7 +6,9 @@
 # Escribir una función llamada get_group que se le pase si es caducable(booleano) y su nombre(string), y devuelva el grupo que le corresponde 'A' o 'B'.
 # Intenta usar un solo if (sin else)
 
-###### pon aquí tu código
+def get_group(expired, name):
+    if (expired and name < 'm') or (not expired and name > 'n'): return 'A' 
+    return 'B'
 
 
 

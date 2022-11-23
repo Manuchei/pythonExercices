@@ -6,6 +6,11 @@
 # si no se le pasa un número válido tambien deberá devolver 'cero'
 
 ###### pon aquí tu código
+def evaluator(n):
+    if type(n) != int and not type(n) is float: return 'cero'
+    if n<0: return False
+    if n>0: return True
+    return 'cero'
 
 def test():
     assert evaluator(4) == True, "4 should be true"

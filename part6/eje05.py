@@ -9,6 +9,22 @@
 # Crea 2 metodos privados has_two_adjacent_digits y digits_never_decrease para ayudarte a resolver el problema
 
 class Password:
+    def __init__(self, password):
+       self.password = password
+
+    def is_valid(self):
+        if len(self.password)<5: return False
+        if self.__has_two_adjacent_digits(): return False
+        if not self.__digits_never_decrease(): return False
+        return True
+    def __has_two_adjacent_digits(self):
+        for i in range(len(self.password)-1):
+            if self.password[i] == self.password[i+1]: return True
+        return False
+    def __digits_never_decrease(self):
+        for i in range(len(self.password)-1):
+            if int(self.password[i]) > int(self.password[i+1]): return False
+        return True
    
 
 

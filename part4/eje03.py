@@ -19,28 +19,24 @@ id_my_set = id(my_set)
 
 
 # añadir un elemento al principio de my_list
->> your code here
+my_list.insert(0,0)
 
 # añadir un elemento al principio de my_tupla
->> your code here
 
 # añadir un elemento al principio de my_dictionary
->> your code here
+
 
 # añadir un elemento al principio de my_set
->> your code here
 
 # eliminar el ultimo elemento de la tupla
->> your code here
 
 # eliminar el ultimo elemento de la lista
->> your code here
+my_list.pop()
 
 # eliminar el ultimo elemento del diccionario
->> your code here
 
 # eliminar el ultimo elemento del set
->> your code here
+
 
 
 

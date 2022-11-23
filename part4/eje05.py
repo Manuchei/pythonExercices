@@ -6,7 +6,7 @@ flowers = ['rosa','crisantemo','gladiolo','margarita','rosa','gladiolo','jacinto
 
 def remove_duplicates(data):
     # your code here
-    return None
+            return list(set(data))
 
 def test():
     assert remove_duplicates(['pera', 'limon', 'fresa', 'pera', 'limon', 'limon']).count('pera')==1, "Should be 1 pera"

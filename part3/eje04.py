@@ -6,7 +6,10 @@
 
 def last_value(elements):
     # your code here
-    return None
+    if not type(elements) == list or len(elements)==0: return None
+    last=elements[-1]
+    if type(last) == str: return last.upper()
+    return last
 
 def test():
     assert last_value([4,6,'Ana']) == 'ANA', "Should be ANA"

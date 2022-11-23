@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
 # función llamada superstition que reciba una tupla e indique el número de veces que aparece repetido el numero 13
 # si a la función no se le pasa una tupla correcta, devolverá 0
-
 ###### pon aquí tu código
+def superstition(element):
+    if type (element) != tuple: return 0
+    return element.count(13)
+
+
+
 
 
 def test():

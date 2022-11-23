@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
-# crea una función llamada suma_10 que determine si hay 2 valores cualesquiera en la lista que sumen 10
+# crea una función llamada suma_8 que determine si hay 2 valores cualesquiera en la lista que sumen 10
 # El reto está en crear una algoritmo con complejidad O(n). (Un solo bucle for)
 
-# O(n)
+
 def suma_8(list):
-    # your code here
+    complements = set()
+    for e in list:
+        if(e in complements): return True
+        complements.add(8-e)
     return False
 
 def test():

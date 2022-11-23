@@ -3,7 +3,10 @@
 
 def numbers(total):
     # your code here
-    return None
+    list_result = []
+    for i in range(1,total+1):
+        list_result.append(i)
+    return list_result
 
 
 def test():

@@ -1,7 +1,12 @@
 # -*- coding: utf-8 -*-
 # Documenta la siguiente función usando docstrings
 
+
+
 def max(numbers):
+    """
+    Función que calcula el mayor valor de un array
+    """
     if len(numbers) == 0:
         return None
     else:

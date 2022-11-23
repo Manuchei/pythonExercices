@@ -3,10 +3,10 @@
 # usando 2 tipos diferentes de comentarios
 
 def return_value():
-    a=5
+    #a=5
     b=6
-    b=a+6
-    b=b+7
+    '''b=a+6
+    b=b+7'''
     return b
 
 

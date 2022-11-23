@@ -17,21 +17,34 @@
 # - una gallina llamado calimero, de 1 años, de color amarillo y que pesa 3 kilos
 
 
-class 
+class Bird:
+    def __init__(self, name, age, colors, weight, can_fly, can_swim):
+        self.name=name
+        self.age=age
+        self.colors=colors
+        self.weight=weight
+        self.can_fly=can_fly
+        self.can_swim=can_swim
+    
+        
+        
+class Chicken(Bird):
+    def __init__(self, name, age, colors, weight):
+        Bird.__init__(self, name, age, colors, weight, False, False)
 
-class 
+
+class Duck(Bird):
+    def __init__(self, name, age, colors, weight):
+        Bird.__init__(self, name, age, colors, weight, True, True)
 
 
-class 
-
-
-lucas_duck =
-calimero = 
+lucas_duck = Duck('lucas', 88, ['yellow','black'],30)
+calimero = Chicken('calimero', 1, ['yellow'], 3)
 
 def test():
-    assert type(Bird).__name__ == 'classobj', "Bird should be a class"
-    assert type(Duck).__name__ == 'classobj', "Duck should be a class"
-    assert type(Chicken).__name__ == 'classobj', "Chicken should be a class"
+   # assert type(Bird).__name__ == 'classobj', "Bird should be a class"
+   # assert type(Duck).__name__ == 'classobj', "Duck should be a class"
+   # assert type(Chicken).__name__ == 'classobj', "Chicken should be a class"
     assert isinstance(lucas_duck,Duck), "lucas_duck should be a Duck"
     assert isinstance(lucas_duck,Bird), "lucas_duck should be a Bird"
     assert isinstance(calimero,Chicken), "calimero should be a Chicken"

@@ -2,6 +2,8 @@
 # un valor y devuelve el mismo elevado al cubo
 
 ###### pon aquí tu código
+def cube(n):
+    return n**3
 
 def test():
     assert cube(2) == 8, "Should be lower 2^3 to 8"

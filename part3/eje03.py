@@ -2,7 +2,7 @@
 # Dada una lista llamada teachers, haz un duplicado de la misma en otra lista llamada employees
 
 teachers = ['Juan', 'Pedro', 'Ana', 'Maria', 'Luis']
-employees = 
+employees =  teachers.copy()
 
 def test():
     teachers[0]='Peter'

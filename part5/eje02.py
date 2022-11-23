@@ -2,8 +2,10 @@
 # función llamada consecutive_suma_10 que determine si hay 2 valores consecutivos en la lista que sumen 10
 # # pueden ser enteros y decimales
 def consecutive_suma_10(list): 
-    # your code here
-    return None
+    for i in range(len(list)-1):
+        if list[i] + list[i+1] == 10:
+            return True
+    return False
 
 def test():
     assert consecutive_suma_10([1,4,6,5,5]) == True, "5+5 Should be true"

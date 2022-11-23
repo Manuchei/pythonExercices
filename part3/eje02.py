@@ -5,7 +5,7 @@
 # El tercer elemento debe ser un valor booleano
 # El cuarto elemento debe ser una lista de 3 elementos de tipo cadena de texto
 
-colection = ???
+colection = [23, "Manuel Dominguez D", True, ["adios", "hola", "que tal"]  ]
 
 
 def test():

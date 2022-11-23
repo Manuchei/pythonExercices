@@ -4,7 +4,7 @@
 
 fruits = ['🍑', '🍊', '🍋', '🍓']
 
-inverse_fruits = 
+inverse_fruits = list(reversed(fruits))
 ###### pon aquí tu código
 
 

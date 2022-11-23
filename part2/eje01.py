@@ -2,7 +2,8 @@
 
 # Crea función llamada expo que devuelva un número elevado a un valor
 
-###### pon aquí tu código
+def expo(a,b):
+    return a**b
 
 
 def test():

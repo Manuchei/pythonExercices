@@ -5,7 +5,8 @@
 # - Número de participantes en cada grupo 
 # - Personas que quedan fuera de algún grupo
 
-###### pon aquí tu código
+def create_group(participants, groups):
+    return participants//groups,participants%groups
 
 def test():
     assert create_group(4, 2) == (2,0), "(4, 2) Should be 2,0"

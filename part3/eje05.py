@@ -5,7 +5,14 @@
 
 def insert_my_name(list, yourName):
     # your code here
-    pass
+    if len(list) % 2 == 0:
+        middle=len(list)//2
+        list.insert(middle,yourName)
+    else:
+        list.append(yourName)
+
+
+    
 
 
 def test():

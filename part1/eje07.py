@@ -1,11 +1,12 @@
 # La función calculus devuelve 3 valores
 # guarda los 2 primeros valores 
-# en dos variables llamadas value1 y value 2
+# en dos variables llamadas value1 y value2
 # hazo en una sola linea
 
 def calculus():
     return 3.1415, 2.718 
 
+value1,value2 = calculus()
 ###### pon aquí tu código
 
 def test():

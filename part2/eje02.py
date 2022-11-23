@@ -6,7 +6,10 @@
 # No se tendrán en cuenta los meses (solo los años), deberás usar un string formateado
 
 
-###### pon aquí tu código
+def birthday(nac,now):
+    #return "tienes %d años" %(now-nac)
+    return "tienes {} años".format(now-nac)
+
 
 
 

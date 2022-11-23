@@ -4,7 +4,17 @@
 # tambien se guardará los points(puntos) obtenidos en los 3 torneos que ha participado (usando un diccionario)
 
 
-person = ???
+person ={
+    'name':'Manuel',
+    'surname':'Dominguez',
+    'age':23,
+    'dni':'39465318D',
+    'country':'Vigo', 
+    'hobbies':['leer', 'cocinar', 'estudiar'], 
+    'skills':['python', 'Js', 'Java'], 
+    'is_married':False, 
+    'points':{'p1':3, 'p2':0, 'p3':1}
+    }
 
 def test():
     assert type(person) is dict, "person should be a dictionary"
