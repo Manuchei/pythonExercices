@@ -16,8 +16,7 @@ class Computer:
         self.state=False
     def __add__(self, other):
         return self.price + other.price
-
-
+    
 def test():
     c1=Computer('HP',8,1000)
     c2=Computer('HP',4,450)
